@@ -516,6 +516,82 @@ tbody tr:hover {
     resize: vertical;
 }
 
+
+
+/*GLOSSARY WIDGET*/
+
+.glossary-details {
+    border: 1px solid var(--medium-gray);
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+    background-color: var(--white);
+    transition: background-color 0.2s, border-left-width 0.2s;
+}
+
+.glossary-details[open] {
+    background-color: var(--light-gray);
+    border-left: 4px solid var(--f1-red);
+}
+
+.glossary-details summary {
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--f1-dark);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.glossary-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.glossary-details summary::after {
+    content: '+';
+    color: var(--f1-red);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.glossary-details[open] summary::after {
+    content: '−';
+}
+
+.glossary-details .term-body {
+    padding: 0 1rem 0.85rem 1rem;
+    margin-bottom: 0;
+    color: var(--f1-dark-lighter);
+}
+
+/* MEDIA */
+
+.media-figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.media-figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+.media-figure figcaption {
+    font-size: 0.85rem;
+    color: var(--dark-gray);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+
 /*RESPONSIVE DESIGN*/
 @media (max-width: 768px) {
     nav {
@@ -563,4 +639,5 @@ tbody tr:hover {
         flex-direction: column;
         gap: 2rem;
     }
+
 }

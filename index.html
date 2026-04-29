@@ -25,6 +25,12 @@
         </ul>
     </nav>
 
+    <!-- Alert Banner (JavaScript dismiss) -->
+    <div id="alert-banner" class="alert-banner">
+        <span>New for 2026: Active Aerodynamics replaces DRS. Every driver gets Straight Mode on every lap. <a href="rules.html">Learn more &rarr;</a></span>
+        <button id="dismiss-alert" class="alert-banner-dismiss" aria-label="Dismiss">&times;</button>
+    </div>
+
     <!-- Header -->
     <header class="hero">
         <h1>Formula 1 Made Simple</h1>
@@ -53,7 +59,50 @@
             </div>
         </section>
 
-        <!-- Section 2: Why learn F1 Here -->
+        <!-- Section 2: 2026 Season Slideshow -->
+        <section class="facts-slider">
+            <h2>2026 Season at a Glance</h2>
+            <div class="slider-container">
+                <div class="slide active">
+                    <div class="slide-number">24</div>
+                    <h3>Grand Prix Races</h3>
+                    <p>The biggest calendar in F1 history, spanning from the Australian GP in March to the Abu Dhabi GP in December.</p>
+                </div>
+                <div class="slide">
+                    <div class="slide-number">11</div>
+                    <h3>Teams on the Grid</h3>
+                    <p>Cadillac joins as the 11th constructor. This is the first new team to enter Formula 1 since Haas debuted in 2016.</p>
+                </div>
+                <div class="slide">
+                    <div class="slide-number">New</div>
+                    <h3>Active Aerodynamics</h3>
+                    <p>Movable wing elements replace DRS. Every driver gets Straight Mode automatically, no gap to the car ahead required.</p>
+                </div>
+                <div class="slide">
+                    <div class="slide-number">6</div>
+                    <h3>Sprint Weekends</h3>
+                    <p>Six events feature a Saturday Sprint race: China, Miami, Canada, Great Britain, Netherlands, and Singapore.</p>
+                </div>
+                <div class="slide">
+                    <div class="slide-number">50%</div>
+                    <h3>Electric Power</h3>
+                    <p>The MGU-K was tripled to 350 kW, making each car's power unit roughly half electric, half combustion.</p>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="slider-btn" id="slider-prev" aria-label="Previous slide">&#8249;</button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="slider-btn" id="slider-next" aria-label="Next slide">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Section 3: Why learn F1 Here -->
         <section class="why-section">
             <h2>Why Learn F1 Here?</h2>
             <div class="why-cards">
@@ -101,6 +150,9 @@
             </div>
         </div>
     </footer>
+    <!-- jQuery (for slideshow) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="project.js"></script>
 </body>
 
 </html>

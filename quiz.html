@@ -40,128 +40,154 @@
         <!-- Main Content -->
         <main class="content-main">
 
-            <!-- Question 1 -->
-            <section class="quiz-question">
-                <h3>Question 1</h3>
-                <p>How many teams compete on the 2026 Formula 1 grid?</p>
-                <ul>
-                    <li>A) 10</li>
-                    <li>B) 11</li>
-                    <li>C) 12</li>
-                    <li>D) 9</li>
-                </ul>
-            </section>
+            <!-- Interactive Quiz -->
+            <div id="quiz-container">
 
-            <!-- Question 2 -->
-            <section class="quiz-question">
-                <h3>Question 2</h3>
-                <p>Which team joined the grid as the newest constructor for the 2026 season?</p>
-                <ul>
-                    <li>A) Audi</li>
-                    <li>B) Porsche</li>
-                    <li>C) Cadillac</li>
-                    <li>D) Toyota</li>
-                </ul>
-            </section>
+                <!-- Question 1 -->
+                <section class="quiz-question">
+                    <h3>Question 1</h3>
+                    <p>How many teams compete on the 2026 Formula 1 grid?</p>
+                    <ul class="quiz-options">
+                        <li><label><input type="radio" name="q1" value="A"> A) 10</label></li>
+                        <li><label><input type="radio" name="q1" value="B"> B) 11</label></li>
+                        <li><label><input type="radio" name="q1" value="C"> C) 12</label></li>
+                        <li><label><input type="radio" name="q1" value="D"> D) 9</label></li>
+                    </ul>
+                    <div class="question-feedback" id="feedback-1"></div>
+                </section>
 
-            <!-- Question 3 -->
-            <section class="quiz-question">
-                <h3>Question 3</h3>
-                <p>How many Grand Prix races are on the 2026 F1 calendar?</p>
-                <ul>
-                    <li>A) 20</li>
-                    <li>B) 22</li>
-                    <li>C) 23</li>
-                    <li>D) 24</li>
-                </ul>
-            </section>
+                <!-- Question 2 -->
+                <section class="quiz-question">
+                    <h3>Question 2</h3>
+                    <p>Which team joined the grid as the newest constructor for the 2026 season?</p>
+                    <ul class="quiz-options">
+                        <li><label><input type="radio" name="q2" value="A"> A) Audi</label></li>
+                        <li><label><input type="radio" name="q2" value="B"> B) Porsche</label></li>
+                        <li><label><input type="radio" name="q2" value="C"> C) Cadillac</label></li>
+                        <li><label><input type="radio" name="q2" value="D"> D) Toyota</label></li>
+                    </ul>
+                    <div class="question-feedback" id="feedback-2"></div>
+                </section>
 
-            <!-- Question 4 -->
-            <section class="quiz-question">
-                <h3>Question 4</h3>
-                <p>What system replaced DRS (Drag Reduction System) starting in the 2026 season?</p>
-                <ul>
-                    <li>A) Push-to-Pass</li>
-                    <li>B) Active Aerodynamics with Overtake Mode</li>
-                    <li>C) KERS Boost</li>
-                    <li>D) Turbo Override</li>
-                </ul>
-            </section>
+                <!-- Question 3 -->
+                <section class="quiz-question">
+                    <h3>Question 3</h3>
+                    <p>How many Grand Prix races are on the 2026 F1 calendar?</p>
+                    <ul class="quiz-options">
+                        <li><label><input type="radio" name="q3" value="A"> A) 20</label></li>
+                        <li><label><input type="radio" name="q3" value="B"> B) 22</label></li>
+                        <li><label><input type="radio" name="q3" value="C"> C) 23</label></li>
+                        <li><label><input type="radio" name="q3" value="D"> D) 24</label></li>
+                    </ul>
+                    <div class="question-feedback" id="feedback-3"></div>
+                </section>
 
-            <!-- Question 5 -->
-            <section class="quiz-question">
-                <h3>Question 5</h3>
-                <p>Under the 2026 qualifying format, how many drivers are eliminated in Q1?</p>
-                <ul>
-                    <li>A) 4</li>
-                    <li>B) 5</li>
-                    <li>C) 6</li>
-                    <li>D) 7</li>
-                </ul>
-            </section>
+                <!-- Question 4 -->
+                <section class="quiz-question">
+                    <h3>Question 4</h3>
+                    <p>What system replaced DRS (Drag Reduction System) starting in the 2026 season?</p>
+                    <ul class="quiz-options">
+                        <li><label><input type="radio" name="q4" value="A"> A) Push-to-Pass</label></li>
+                        <li><label><input type="radio" name="q4" value="B"> B) Active Aerodynamics with Overtake Mode</label></li>
+                        <li><label><input type="radio" name="q4" value="C"> C) KERS Boost</label></li>
+                        <li><label><input type="radio" name="q4" value="D"> D) Turbo Override</label></li>
+                    </ul>
+                    <div class="question-feedback" id="feedback-4"></div>
+                </section>
 
-            <!-- Question 6 -->
-            <section class="quiz-question">
-                <h3>Question 6</h3>
-                <p>How long does Q3 last in the 2026 qualifying format?</p>
-                <ul>
-                    <li>A) 10 minutes</li>
-                    <li>B) 12 minutes</li>
-                    <li>C) 13 minutes</li>
-                    <li>D) 15 minutes</li>
-                </ul>
-            </section>
+                <!-- Question 5 -->
+                <section class="quiz-question">
+                    <h3>Question 5</h3>
+                    <p>Under the 2026 qualifying format, how many drivers are eliminated in Q1?</p>
+                    <ul class="quiz-options">
+                        <li><label><input type="radio" name="q5" value="A"> A) 4</label></li>
+                        <li><label><input type="radio" name="q5" value="B"> B) 5</label></li>
+                        <li><label><input type="radio" name="q5" value="C"> C) 6</label></li>
+                        <li><label><input type="radio" name="q5" value="D"> D) 7</label></li>
+                    </ul>
+                    <div class="question-feedback" id="feedback-5"></div>
+                </section>
 
-            <!-- Question 7 -->
-            <section class="quiz-question">
-                <h3>Question 7</h3>
-                <p>How many Sprint weekends are included in the 2026 season?</p>
-                <ul>
-                    <li>A) 4</li>
-                    <li>B) 5</li>
-                    <li>C) 6</li>
-                    <li>D) 8</li>
-                </ul>
-            </section>
+                <!-- Question 6 -->
+                <section class="quiz-question">
+                    <h3>Question 6</h3>
+                    <p>How long does Q3 last in the 2026 qualifying format?</p>
+                    <ul class="quiz-options">
+                        <li><label><input type="radio" name="q6" value="A"> A) 10 minutes</label></li>
+                        <li><label><input type="radio" name="q6" value="B"> B) 12 minutes</label></li>
+                        <li><label><input type="radio" name="q6" value="C"> C) 13 minutes</label></li>
+                        <li><label><input type="radio" name="q6" value="D"> D) 15 minutes</label></li>
+                    </ul>
+                    <div class="question-feedback" id="feedback-6"></div>
+                </section>
 
-            <!-- Question 8 -->
-            <section class="quiz-question">
-                <h3>Question 8</h3>
-                <p>Which power unit component was removed from F1 cars for the 2026 regulations?</p>
-                <ul>
-                    <li>A) MGU-K</li>
-                    <li>B) MGU-H</li>
-                    <li>C) Turbocharger</li>
-                    <li>D) Energy Store</li>
-                </ul>
-            </section>
+                <!-- Question 7 -->
+                <section class="quiz-question">
+                    <h3>Question 7</h3>
+                    <p>How many Sprint weekends are included in the 2026 season?</p>
+                    <ul class="quiz-options">
+                        <li><label><input type="radio" name="q7" value="A"> A) 4</label></li>
+                        <li><label><input type="radio" name="q7" value="B"> B) 5</label></li>
+                        <li><label><input type="radio" name="q7" value="C"> C) 6</label></li>
+                        <li><label><input type="radio" name="q7" value="D"> D) 8</label></li>
+                    </ul>
+                    <div class="question-feedback" id="feedback-7"></div>
+                </section>
 
-            <!-- Question 9 -->
-            <section class="quiz-question">
-                <h3>Question 9</h3>
-                <p>What is the power output of the MGU-K in the 2026 power unit?</p>
-                <ul>
-                    <li>A) 120 kW</li>
-                    <li>B) 200 kW</li>
-                    <li>C) 350 kW</li>
-                    <li>D) 500 kW</li>
-                </ul>
-            </section>
+                <!-- Question 8 -->
+                <section class="quiz-question">
+                    <h3>Question 8</h3>
+                    <p>Which power unit component was removed from F1 cars for the 2026 regulations?</p>
+                    <ul class="quiz-options">
+                        <li><label><input type="radio" name="q8" value="A"> A) MGU-K</label></li>
+                        <li><label><input type="radio" name="q8" value="B"> B) MGU-H</label></li>
+                        <li><label><input type="radio" name="q8" value="C"> C) Turbocharger</label></li>
+                        <li><label><input type="radio" name="q8" value="D"> D) Energy Store</label></li>
+                    </ul>
+                    <div class="question-feedback" id="feedback-8"></div>
+                </section>
 
-            <!-- Question 10 -->
-            <section class="quiz-question">
-                <h3>Question 10</h3>
-                <p>Who is the defending World Drivers' Champion entering the 2026 season?</p>
-                <ul>
-                    <li>A) Max Verstappen</li>
-                    <li>B) Lewis Hamilton</li>
-                    <li>C) Charles Leclerc</li>
-                    <li>D) Lando Norris</li>
-                </ul>
-            </section>
+                <!-- Question 9 -->
+                <section class="quiz-question">
+                    <h3>Question 9</h3>
+                    <p>What is the power output of the MGU-K in the 2026 power unit?</p>
+                    <ul class="quiz-options">
+                        <li><label><input type="radio" name="q9" value="A"> A) 120 kW</label></li>
+                        <li><label><input type="radio" name="q9" value="B"> B) 200 kW</label></li>
+                        <li><label><input type="radio" name="q9" value="C"> C) 350 kW</label></li>
+                        <li><label><input type="radio" name="q9" value="D"> D) 500 kW</label></li>
+                    </ul>
+                    <div class="question-feedback" id="feedback-9"></div>
+                </section>
 
-            <!-- Answer Key -->
-            <section id="answer-key">
+                <!-- Question 10 -->
+                <section class="quiz-question">
+                    <h3>Question 10</h3>
+                    <p>Who is the defending World Drivers' Champion entering the 2026 season?</p>
+                    <ul class="quiz-options">
+                        <li><label><input type="radio" name="q10" value="A"> A) Max Verstappen</label></li>
+                        <li><label><input type="radio" name="q10" value="B"> B) Lewis Hamilton</label></li>
+                        <li><label><input type="radio" name="q10" value="C"> C) Charles Leclerc</label></li>
+                        <li><label><input type="radio" name="q10" value="D"> D) Lando Norris</label></li>
+                    </ul>
+                    <div class="question-feedback" id="feedback-10"></div>
+                </section>
+
+                <!-- Submit + Score -->
+                <div class="quiz-submit-area">
+                    <button type="button" id="submit-quiz" class="btn">Check My Answers</button>
+                </div>
+
+                <div class="quiz-score" id="quiz-score">
+                    <span class="score-num" id="score-num"></span>
+                    <h3>Quiz Complete!</h3>
+                    <p id="score-msg"></p>
+                </div>
+
+            </div><!-- end quiz-container -->
+
+            <!-- Answer Key (hidden until quiz is submitted) -->
+            <section id="answer-key" style="display:none">
                 <h2>Answer Key</h2>
                 <p>Check your answers below to see how many you got right.</p>
                 <ol>
@@ -189,18 +215,20 @@
                 </ol>
             </section>
 
-            <!-- Question Form -->
+            <!-- Question Form (with JS validation) -->
             <section id="ask-a-question" class="quiz-form">
                 <h2>Ask a Question</h2>
                 <p>Have a question about Formula 1 or the quiz? Submit it below and we'll get back to you.</p>
-                <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <form method="post" action="https://webdevbasics.net/scripts/demo.php" novalidate>
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="e.g. Lewis Hamilton" required>
+                        <input type="text" id="name" name="name" placeholder="e.g. Lewis Hamilton">
+                        <span class="field-error" id="name-error"></span>
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        <input type="email" id="email" name="email" placeholder="you@example.com">
+                        <span class="field-error" id="email-error"></span>
                     </div>
                     <div class="form-group">
                         <label for="topic">Topic</label>
@@ -215,7 +243,8 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Your Question</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Type your question here..." required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Type your question here..."></textarea>
+                        <span class="field-error" id="message-error"></span>
                     </div>
                     <button type="submit" class="btn">Submit Question</button>
                 </form>
@@ -281,6 +310,7 @@
         </div>
     </footer>
 
+    <script src="project.js"></script>
 </body>
 
 </html>
